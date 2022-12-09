@@ -291,6 +291,9 @@
     display: inline;
     padding-right: 1.5rem;
   }
+  .about__bio {
+    font-size: 1.5rem;
+  }
 }
 body {
   background: #272727;
