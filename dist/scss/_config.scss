@@ -22,7 +22,7 @@ $accent-color: #ff5733;
 }
 
 @mixin media-md {
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 1050px) {
     @content;
   }
 }
