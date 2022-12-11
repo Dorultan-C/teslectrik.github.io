@@ -296,8 +296,8 @@
   }
 }
 .gallery {
-  height: 100%;
-  padding-top: 30vh;
+  height: 100vh;
+  padding-top: 90vh;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -305,16 +305,44 @@
   background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../photos/tesla-dashboard.jpg) center top;
   background-size: cover;
 }
-.gallery h2 {
-  font-size: 3rem;
-  margin-bottom: 2rem;
+.gallery .slide-container {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
 }
-.gallery__list {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 2rem;
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
+.gallery .slide-container .image-slider {
+  width: 100%;
+  height: 60vh;
+  position: absolute;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.7s;
+}
+.gallery .slide-container .image-slider .slides-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 30px 0 30px;
+}
+.gallery .slide-container .image-slider .slides-div .img {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  transition: 0.5s;
+  filter: saturate(10%);
+}
+.gallery .slide-container .image-slider .slides-div .button {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.gallery .slide-container .image-slider .slides-div .button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 body {
